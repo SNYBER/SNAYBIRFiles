@@ -1791,20 +1791,6 @@ end
 DevAbs:setex(SNAYBIR..'Abs:Start:Time'..msg.sender_user_id_,300,true)
 return false
 end end
-f SecondSudo(msg) then 
-local Sudo_Welcome =  ⌁︙مرحبا عزيزي  اليك ازارة البوتات الخدمية 
-local key = {
-{ نسبة الجمال , ↫ نسبة الحب ⌁ , بوت زخرفة },
-{ ↫ بوت تصميم ⌁ , ↫ بوت المنوع ⌁ },
-{ ↫ بوت متحركة ⌁ , بوت استوريات , ↫بوت اغاني ⌁ },
-{ ↫ حساب العمر ⌁ , ↫ بوت الابراج ⌁ },
-{ ↫ بوت لعبة XO ⌁ },
-{ بوت همسة سرية , بوت رشق انستا},
-}
-SendInline(msg.chat_id_,Sudo_Welcome,key)
-return false
-end end
-
 --     Source SNAYBIR     --
 if not SecondSudo(msg) and not DevAbs:sismember(SNAYBIR..'Abs:Ban:Pv',msg.sender_user_id_) and not DevAbs:get(SNAYBIR..'Abs:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
