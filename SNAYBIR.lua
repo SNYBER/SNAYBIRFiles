@@ -1213,9 +1213,6 @@ local Text = [[
 ⌁︙معاني الاسماء • اوامر النسب • انطق
 ⌁︙الايدي • تحويل الصيغ • اوامر التحشيش
 ⌁︙ردود المدير • ردود المطور • التحقق
-⌁︙مسلسل • فلم • انمي
-⌁︙صوره • ريمكس • الاغاني
-⌁︙اليوتيوب  • متحركه • ميمز
 ⌁︙ضافني • حساب العمر • الزخرفه
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/SNAYBIR)
@@ -1377,9 +1374,6 @@ local Text = [[
 ⌁︙ايدي المجموعه • معلومات المجموعه 
 ⌁︙نسبه الحب • نسبه الكره • نسبه الغباء 
 ⌁︙نسبه الرجوله • نسبه الانوثه • التفاعل
-⌁︙انمي • صوره • ريمكس
-⌁︙فلم • مسلسل • متحركه
-⌁︙اغنيه • بحث • ميمز
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙لقبه + بالرد
 ⌁︙كول + الكلمه
@@ -1471,11 +1465,9 @@ DevAbs:del(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_)
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙تم حذف الاوامر المضافه في المجموعه", 1, 'html')
 end
-if text == "ترتيب الاوامر" then
+if text == "ترتيب الاوامر" and Constructor(msg) and ChCheck(msg) then
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ا")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"م")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
@@ -1486,42 +1478,34 @@ DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"من")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"اس")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مط")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
- DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رد ","اضف رد")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رد ")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد ")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ت")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مط")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ثا","رفع مطور ثانوي ")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ثا")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ر")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رر")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مك","مسح المكتومين")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مك")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"،،")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رد")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"سح")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رس")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"غ")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":.","غنيلي")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,".")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":عا","مسح قائمه العام")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"عا")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مت ","اضف رد متعدد")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مت ")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":كت","كت تويت")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"كت")
-send(msg.chat_id_, msg.id_,"*✬︙تم ترتيب الاوامر بالشكل التالي*\n*✬︙ايدي - ا .*\n*✬︙مميز - م .\n✬︙ادمن - اد .*\n*✬︙مدير - مد . \n✬︙منشى - من .*\n*✬︙المنشئ الاساسي - اس .*\n*✬︙تعطيل الايدي بالصوره - تعط .*\n*✬︙تفعيل الايدي بالصوره - تفع .*\n*✬︙تنزيل الكل - تك .*\n*✬︙اضف رد - رد .*\n*✬︙حذف رد - حذ .*\n*✬︙تثبيت - ت .*\n*✬︙رفع مطور - مط*\n*✬︙رفع مطور ثانوي - ثا*\n*✬︙الرابط - ر*\n*✬︙ردود المدير - رر*\n*✬︙مسح المكتومين - مك*\n*✬︙اضف رد متعدد - مت*\n*✬︙مسح سحكاتي - سح*\n*✬︙مسح رسائلي - رس*\n*✬︙. - غنيلي - غ *\n*✬︙مسح قائمه العام - عا  *\n*✬︙كت تويت - كت *")
- end
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"#")
+send(msg.chat_id_, msg.id_,"♡︙تم ترتيب الاوامر بالشكل التالي ~\n♡︙ ايدي - ا .\n♡︙ رفع مميز - م .\n♡︙رفع ادمن - اد .\n♡︙ رفع مدير - مد . \n♡︙ رفع منشى - من . \n♡︙ رفع منشئ الاساسي - اس  .\n♡︙ رفع مطور - مط .\n♡︙رفع مطور ثانوي - ثانوي .\n♡︙ تنزيل الكل - تك .\n♡︙ تعطيل الايدي بالصوره - تعط .\n♡︙ تفعيل الايدي بالصوره - تفع .\n♡︙ الرابط - ر .\n♡︙ ردود المدير - رر .\n♡︙ مسح المكتومين - ،، .\n♡︙ اضف رد - رد .\n♡︙ مسح سحكاتي - سح .\n♡︙ مسح رسائلي - رس .\n♡︙ غنيلي - غ .\n♡︙مسح قائمه العام - #")  
+end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevAbs:set(SNAYBIR.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل الامر القديم", 1, 'html')
@@ -1752,7 +1736,7 @@ local key = {
 {'↫ اذاعه عام بالتوجيه ⌁','↫ اذاعه خاص بالتوجيه ⌁'},
 {'~ تعيين كلايش الاوامر ~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
-{'قناة السورس','تحديث السورس','جلب نسخه الكروبات'},
+{'جلب نسخه السورس','تحديث السورس','جلب نسخه الكروبات'},
 {'↫ حذف رد عام ⌁','↫ الردود العام ⌁','↫ اضف رد عام ⌁'},
 {'↫ حذف رد الخاص ⌁','↫ تعيين رد الخاص ⌁'},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
@@ -1787,10 +1771,10 @@ Start_Source = "⌁︙مرحبا انا بوت اسمي "..NameBot.."\n⌁︙ا�
 end 
 SendInline(msg.chat_id_,Start_Source,nil,inline)
 end,nil)
-end 
+end
 DevAbs:setex(SNAYBIR..'Abs:Start:Time'..msg.sender_user_id_,300,true)
 return false
-end end
+end 
 --     Source SNAYBIR     --
 if not SecondSudo(msg) and not DevAbs:sismember(SNAYBIR..'Abs:Ban:Pv',msg.sender_user_id_) and not DevAbs:get(SNAYBIR..'Abs:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
@@ -4371,7 +4355,7 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source SNAYBIR     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙@llllZ_BOT', 1, 'md') end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙@HMSEBOT', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(SNAYBIR..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
@@ -4382,15 +4366,21 @@ if text == "ايدي المجموعه" and ChCheck(msg) then Dev_Abs(msg.chat_id
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevAbs:del(SNAYBIR..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
 if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(SNAYBIR..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم حذف جميع جهاتك المضافه' , 1, 'md') end
 --     Source SNAYBIR     --
-if text and (text ==  المطور  or text ==  مطور  or text ==  ↫  المطور ᥀ ) then
-tdcli_function({ID="GetUser",user_id_=DevId},function(arg,result)
-local msg_id = msg.id_/2097152/0.5
-Text = "*᥀︙Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*᥀︙Dev User ↬* [@"..result.username_.."]"
-keyboard = {} 
-keyboard.inline_keyboard = {{{text =   ..result.first_name_..   ,url="t.me/"..result.username_ or L9L9L}}}
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/ ..result.username_.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end,nil)
+if text == "المطور" then 
+local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevAbs:get(SNAYBIR.."Abs:ChId"))
+local GetInfo = JSON.decode(Check)
+local DevCh1 = GetInfo.result.username
+local DevText = DevAbs:get(SNAYBIR.."DevText")
+if DevAbs:get(SNAYBIR.."Abs:ChId") then DevCh = '\n⌁︙*Dev Ch* ↬ [@'..DevCh1..']' else DevCh = '' end
+tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
+if dp.username_ ~= false then DevUser = '@'..dp.username_ else DevUser = dp.first_name_ end
+if DevText then
+Dev_Abs(msg.chat_id_, msg.id_, 1, DevText, 1, "md")
+else
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*Dev User* ↬ ['..DevUser..']\n⌁︙*Dev Id* ↬ '..DevId..DevCh, 1, "md")
 end
+end,nil)
+end 
 --     Source SNAYBIR     --
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAbs:get(SNAYBIR..'Abs:Lock:Stupid'..msg.chat_id_) then
@@ -6394,11 +6384,11 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,dp) 
 if dp.first_name_ == false then
-Dev_Rio(msg.chat_id_, msg.id_, 1, "᥀︙حساب المنشئ محذوف", 1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "L9L9L")
-Dev_Rio(msg.chat_id_, msg.id_, 1, "᥀︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
+local UserName = (dp.username_ or "SNAYBIR")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
 end
@@ -6994,7 +6984,7 @@ local List = {
 └ 𝐈𝐃 𖤱 #id 𖦴 .
 ]],
 [[
-𓄼🇮🇶 ??𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username 
+𓄼🇮🇶 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username 
 𓄼🇮🇶 𝑺𝒕𝒂𝒔𝒕 : #stast 
 𓄼🇮🇶 𝒊𝒅 : #id 
 𓄼🇮🇶 𝑮𝒂𝒎𝒆𝑺 : #game 
@@ -9392,7 +9382,7 @@ end,nil)
 end,nil)
 end
 --     Source SNAYBIR     --
-if text == 'نون' then
+if text == 'جلب نسخه السورس' then
 if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط ', 1, 'md')
 else
@@ -9884,200 +9874,6 @@ return false
 end
 end
 --     Source SNAYBIR     --
-if text == "تفعيل مسلسل" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل المسلسلات 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:Series:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل مسلسل" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل المسلسلات 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:Series:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "مسلسل" or text == "↫ مسلسل ᥀") and not DevRio:get(David.. Rio:Series:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(2,54); 
-local Text = *᥀︙تم اختيار المسلسل لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendphoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/SeriesDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end 
---     Source SNAYBIR     --
-if text == "تفعيل فلم" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الافلام 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:Movies:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل فلم" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الافلام 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:Movies:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "فلم" or text == "↫ فلم ᥀") and not DevRio:get(David.. Rio:Movies:Rio ..msg.chat_id_) and ChCheck(msg) then
-Rio = math.random(45,125); 
-local Text = *᥀︙تم اختيار الفلم لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendphoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/MoviesDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
-if text == "تفعيل انمي" and Manager(msg) and SourceCh(msg) or text == "تفعيل الانمي" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الانمي 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:Anime:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل انمي" and Manager(msg) and SourceCh(msg) or text == "تعطيل الانمي" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الانمي 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:Anime:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "انمي" or text == "↫ انمي ᥀") and not DevRio:get(David.. Rio:Anime:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(3,1002); 
-local Text = *᥀︙تم اختيار صورة الانمي لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendphoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/AnimeDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
-if text == "تفعيل صوره" and Manager(msg) and SourceCh(msg) or text == "تفعيل الصوره" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الصوره 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:Photo:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل صوره" and Manager(msg) and SourceCh(msg) or text == "تعطيل الصوره" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الصوره 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:Photo:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "صوره" or text == "↫ صوره ᥀") and not DevRio:get(David.. Rio:Photo:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(4,1171); 
-local Text = *᥀︙تم اختيار الصوره لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendphoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/PhotosDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
-if text == "تفعيل ريمكس" and Manager(msg) and SourceCh(msg) or text == "تفعيل الريمكس" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الريمكس 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:Remix:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل ريمكس" and Manager(msg) and SourceCh(msg) or text == "تعطيل الريمكس" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الريمكس 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:Remix:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "ريمكس" or text == "↫ ريمكس ᥀") and not DevRio:get(David.. Rio:Remix:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(2,612); 
-local Text = *᥀︙تم اختيار الريمكس لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendVoice?chat_id=  .. msg.chat_id_ ..  &voice=https://t.me/RemixDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
-if text == "تفعيل الاغاني" and Manager(msg) and SourceCh(msg) or text == "تفعيل اغنيه" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الاغاني 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:mp3:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل الاغاني" and Manager(msg) and SourceCh(msg) or text == "تعطيل اغنيه" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الاغاني 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:mp3:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "اغنيه" or text == "↫ اغنيه ᥀" or text == "اغاني") and not DevRio:get(David.. Rio:mp3:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(2,1167); 
-local Text = *᥀︙تم اختيار الاغنيه لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendVoice?chat_id=  .. msg.chat_id_ ..  &voice=https://t.me/DavidMp3/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
-if text ==  تفعيل اليوتيوب  and Manager(msg) then  
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل اليوتيوب بنجاح 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.."Rio:WhyTube"..msg.chat_id_) 
-return false  
-end
-if text ==  تعطيل اليوتيوب  and Manager(msg) then  
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل اليوتيوب بنجاح 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.."Rio:WhyTube"..msg.chat_id_,true) 
-return false  
-end 
-if text and text:match( ^بحث (.*)$ ) and not DevRio:get(David.."Rio:WhyTube"..msg.chat_id_) then            
-local Text = text:match( ^بحث (.*)$ ) 
-local msg_id = msg.id_/2097152/0.5 
-https.request( https://ccccxcc.ml/David/Api.php?Put=Search&TokenBot= ..TokenBot.. &ChatId= ..msg.chat_id_.. &UserId= ..msg.sender_user_id_.. &Text= ..URL.escape(Text).. &MsgId= ..msg_id.. &Name= ..DirName)
-end
-end
---     Source SNAYBIR     --
-if text == "تفعيل متحركه" and Manager(msg) and SourceCh(msg) or text == "تفعيل المتحركه" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل المتحركه 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:gif:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل متحركه" and Manager(msg) and SourceCh(msg) or text == "تعطيل المتحركه" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل المتحركه 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:gif:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "متحركه" or text == "↫ متحركه ᥀") and not DevRio:get(David.. Rio:gif:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(2,1075); 
-local Text = *᥀︙تم اختيار المتحركه لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendanimation?chat_id=  .. msg.chat_id_ ..  &animation=https://t.me/GifDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
---     Source David     --
-if text == "تفعيل ميمز" and Manager(msg) and SourceCh(msg) or text == "تفعيل الميمز" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تفعيل الميمز 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:del(David.. Rio:memz:Rio ..msg.chat_id_) 
-end
-if text == "تعطيل ميمز" and Manager(msg) and SourceCh(msg) or text == "تعطيل الميمز" and Manager(msg) and SourceCh(msg) then
-local DavidTeam =  ᥀︙اهلا عزيزي ↫  ..RioRank(msg)..  \n᥀︙تم تعطيل الميمز 
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
-DevRio:set(David.. Rio:memz:Rio ..msg.chat_id_,true)  
-end
-if text and (text == "ميمز" or text == "↫ ميمز ᥀") and not DevRio:get(David.. Rio:memz:Rio ..msg.chat_id_) and SourceCh(msg) then
-Rio = math.random(2,1201); 
-local Text = *᥀︙تم اختيار مقطع الميمز لك* 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text =  ᥀ David Team . ,url="t.me/L9L9L"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot.. /sendVoice?chat_id=  .. msg.chat_id_ ..  &voice=https://t.me/MemzDavid/ ..Rio.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
---     Source SNAYBIR     --
 if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ⌁" and SecondSudo(msg) then
 local redod = DevAbs:smembers(SNAYBIR.."Abs:Sudo:AllRed")
 MsgRep = '⌁︙ردود المطور ↫ ⤈ \n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n'
@@ -10389,9 +10185,6 @@ local Text = [[
 ⌁︙معاني الاسماء • اوامر النسب • انطق
 ⌁︙الايدي • تحويل الصيغ • اوامر التحشيش
 ⌁︙ردود المدير • ردود المطور • التحقق
-⌁︙مسلسل • فلم • انمي
-⌁︙صوره • ريمكس • الاغاني
-⌁︙اليوتيوب  • متحركه • ميمز
 ⌁︙ضافني • حساب العمر • الزخرفه
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/SNAYBIR)
@@ -10571,9 +10364,6 @@ local Text = [[
 ⌁︙ايدي المجموعه • معلومات المجموعه 
 ⌁︙نسبه الحب • نسبه الكره • نسبه الغباء 
 ⌁︙نسبه الرجوله • نسبه الانوثه • التفاعل
-⌁︙انمي • صوره • ريمكس
-⌁︙فلم • مسلسل • متحركه
-⌁︙اغنيه • بحث • ميمز
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙لقبه + بالرد
 ⌁︙كول + الكلمه
@@ -10602,7 +10392,8 @@ os.execute('rm -rf SNAYBIR.lua')
 os.execute('wget https://raw.githubusercontent.com/SNYBER/SNAYBIR/main/SNAYBIR.lua') 
 dofile('SNAYBIR.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
-print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
+print("\27[31;47m\n          ( تم تحديث 
+)          \n\27[0;34;49m\n") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
 if text == 'تحديث' or text == 'تحديث البوت' or text == '↫ تحديث ⌁' then  
@@ -10806,21 +10597,6 @@ end end end end
 --     Source SNAYBIR     --
 if text == 'القناة' or text == 'قناة السورس' or text == 'قناه السورس' or text == 'قنات السورس' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙Channel ↬ [@SNAYBIR]', 1, 'md')    
-end 
-if text ==  بوت زغرفة  or text ==  بوت زخرفة or text ==  بوت زغرفه  or text ==  بوت زخرفه or text == زغرفة or text == زخرفه or text ==  نسبة الحب  or text ==  نسبت الحب  or text ==  نسبة الحوب  or text ==  نسبت الحوب or text ==  نسبة الجمال  or text ==  بوت نسبة الجمال  or text ==  اريد بوت نسبة الجمال   or text ==  نسبت الجمال or text == نسبة جمال  or text ==  بوت المنوع  or text ==  بوت منوع  or text ==  تصميم  or text ==  بوت تصميم or text == بوت اغاني or text == بوت استوريات or text == بوت متحركة or text == بوت الابراج or text == حساب العمرthen 
-Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙Channel ↬ [@llllX_BOT] , 1,  md )    
-end 
---     Source SNAYBIR     --
-if text ==  بوت رشق انستا  then 
-Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙Channel ↬ [@lllllN_BOT] , 1,  md )    
-end 
---     Source SNAYBIR     --
-if text ==  بوت همسة سرية  then 
-Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙Channel ↬ [@llllZ_BOT] , 1,  md )    
-end 
---     Source SNAYBIR     --
-if text ==  بوت لعبة XO  or text ==  بوت xo  or text ==  نلعب xo or text ==  xo then 
-Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙Channel ↬ [@llllE_BOT] , 1,  md )    
 end 
 --     Source SNAYBIR     --
 if Sudo(msg) then 
