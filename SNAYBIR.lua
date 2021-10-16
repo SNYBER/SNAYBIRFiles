@@ -1502,6 +1502,8 @@ DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائ
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رس")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"غ")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":.","غنيلي")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,".")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"#")
 send(msg.chat_id_, msg.id_,"♡︙تم ترتيب الاوامر بالشكل التالي ~\n♡︙ ايدي - ا .\n♡︙ رفع مميز - م .\n♡︙رفع ادمن - اد .\n♡︙ رفع مدير - مد . \n♡︙ رفع منشى - من . \n♡︙ رفع منشئ الاساسي - اس  .\n♡︙ رفع مطور - مط .\n♡︙رفع مطور ثانوي - ثانوي .\n♡︙ تنزيل الكل - تك .\n♡︙ تعطيل الايدي بالصوره - تعط .\n♡︙ تفعيل الايدي بالصوره - تفع .\n♡︙ الرابط - ر .\n♡︙ ردود المدير - رر .\n♡︙ مسح المكتومين - ،، .\n♡︙ اضف رد - رد .\n♡︙ مسح سحكاتي - سح .\n♡︙ مسح رسائلي - رس .\n♡︙ غنيلي - غ .\n♡︙مسح قائمه العام - #")  
@@ -4355,7 +4357,9 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source SNAYBIR     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙@HMSEBOT', 1, 'md') end
+if text ==  بوت لعبة XO  or text ==  بوت xo  or text ==  نلعب xo or text ==  xo then local inline = {{{text="اضغط هنا",url="https://t.me/llllE_BOT"}}} SendInline(msg.chat_id_, ⌁︙اضغط للدخول للبوت ,nil,inline) return false end
+if text ==  بوت زغرفة  or text ==  بوت زخرفة or text ==  بوت زغرفه  or text ==  بوت زخرفه or text == زغرفة or text == زخرفه or text ==  نسبة الحب  or text ==  نسبت الحب  or text ==  نسبة الحوب  or text ==  نسبت الحوب or text ==  نسبة الجمال  or text ==  بوت نسبة الجمال  or text ==  اريد بوت نسبة الجمال   or text ==  نسبت الجمال or text == نسبة جمال  or text ==  بوت المنوع  or text ==  بوت منوع  or text ==  تصميم  or text ==  بوت تصميم or text == بوت اغاني or text == بوت استوريات or text == بوت متحركة or text == بوت الابراج or text == حساب العمر then local inline = {{{text="اضغط هنا",url="https://t.me/llllX_BOT"}}} SendInline(msg.chat_id_, ⌁︙اضغط للدخول للبوت,nil,inline) return false end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙@llllZ_BOT , 1,  md ) end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(SNAYBIR..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
@@ -10386,14 +10390,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
 --     Source SNAYBIR     --
 if SecondSudo(msg) then
-if text == "تحديث السورس" or text == "تحديث سورس" then 
+if text == "تحديث السورس" and ChCheck(msg) or text == "تحديث سورس" and ChCheck(msg) or text == "↫ تحديث السورس ᥀" and ChCheck(msg) then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙جاري تحديث سورس سنايبر', 1, 'md') 
 os.execute('rm -rf SNAYBIR.lua') 
 os.execute('wget https://raw.githubusercontent.com/SNYBER/SNAYBIR/main/SNAYBIR.lua') 
 dofile('SNAYBIR.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
-print("\27[31;47m\n          ( تم تحديث 
-)          \n\27[0;34;49m\n") 
+print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
 if text == 'تحديث' or text == 'تحديث البوت' or text == '↫ تحديث ⌁' then  
