@@ -1468,6 +1468,8 @@ end
 if text == "ترتيب الاوامر" and Constructor(msg) and ChCheck(msg) then
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ا")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":م","رفع مميز")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"م")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":اد","رفع ادمن")
@@ -1478,24 +1480,26 @@ DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"من")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"اس")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مط")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ثانوي","رفع مطور ثانوي")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ثانوي")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تك","تنزيل الكل")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تك")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
+ DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رد ","اضف رد")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رد ")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":حذ","حذف رد ")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"حذ")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ت","تثبيت")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ت")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مط","رفع مطور")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مط")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ثا","رفع مطور ثانوي ")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ثا")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":ر","الرابط")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"ر")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رر","ردود المدير")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رر")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":،،","مسح المكتومين")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"،،")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رد","اضف رد")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"رد")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مك","مسح المكتومين")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مك")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":سح","مسح سحكاتي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"سح")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":رس","مسح رسائلي")
@@ -1504,9 +1508,13 @@ DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"غ")
 DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":.","غنيلي")
 DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,".")
-DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
-DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"#")
-send(msg.chat_id_, msg.id_,"♡︙تم ترتيب الاوامر بالشكل التالي ~\n♡︙ ايدي - ا .\n♡︙ رفع مميز - م .\n♡︙رفع ادمن - اد .\n♡︙ رفع مدير - مد . \n♡︙ رفع منشى - من . \n♡︙ رفع منشئ الاساسي - اس  .\n♡︙ رفع مطور - مط .\n♡︙رفع مطور ثانوي - ثانوي .\n♡︙ تنزيل الكل - تك .\n♡︙ تعطيل الايدي بالصوره - تعط .\n♡︙ تفعيل الايدي بالصوره - تفع .\n♡︙ الرابط - ر .\n♡︙ ردود المدير - رر .\n♡︙ مسح المكتومين - ،، .\n♡︙ اضف رد - رد .\n♡︙ مسح سحكاتي - سح .\n♡︙ مسح رسائلي - رس .\n♡︙ غنيلي - غ .\n♡︙مسح قائمه العام - #")  
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":عا","مسح قائمه العام")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"عا")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":مت ","اضف رد متعدد")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"مت ")
+DevAbs:set(SNAYBIR.."Set:Cmd:Group:New1"..msg.chat_id_..":كت","كت تويت")
+DevAbs:sadd(SNAYBIR.."List:Cmd:Group:New"..msg.chat_id_,"كت")
+send(msg.chat_id_, msg.id_,"*✬︙تم ترتيب الاوامر بالشكل التالي*\n*✬︙ايدي - ا .*\n*✬︙مميز - م .\n✬︙ادمن - اد .*\n*✬︙مدير - مد . \n✬︙منشى - من .*\n*✬︙المنشئ الاساسي - اس .*\n*✬︙تعطيل الايدي بالصوره - تعط .*\n*✬︙تفعيل الايدي بالصوره - تفع .*\n*✬︙تنزيل الكل - تك .*\n*✬︙اضف رد - رد .*\n*✬︙حذف رد - حذ .*\n*✬︙تثبيت - ت .*\n*✬︙رفع مطور - مط*\n*✬︙رفع مطور ثانوي - ثا*\n*✬︙الرابط - ر*\n*✬︙ردود المدير - رر*\n*✬︙مسح المكتومين - مك*\n*✬︙اضف رد متعدد - مت*\n*✬︙مسح سحكاتي - سح*\n*✬︙مسح رسائلي - رس*\n*✬︙. - غنيلي - غ *\n*✬︙مسح قائمه العام - عا  *\n*✬︙كت تويت - كت *")
 end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevAbs:set(SNAYBIR.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
@@ -1736,26 +1744,31 @@ local key = {
 {'↫ اذاعه بالتثبيت ⌁'},
 {'↫ اذاعه عام ⌁','↫ اذاعه خاص ⌁'},
 {'↫ اذاعه عام بالتوجيه ⌁','↫ اذاعه خاص بالتوجيه ⌁'},
-{'~ تعيين كلايش الاوامر ~'},
+{'~المتجر~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
-{'جلب نسخه السورس','تحديث السورس','جلب نسخه الكروبات'},
+{'قناة السورس','تحديث السورس','جلب نسخه الكروبات'},
 {'↫ حذف رد عام ⌁','↫ الردود العام ⌁','↫ اضف رد عام ⌁'},
-{'↫ حذف رد الخاص ⌁','↫ تعيين رد الخاص ⌁'},
+{'↫ حذف رد الخاص ⌁ ',' ↫ تعيين رد الخاص ⌁'},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
 {'حذف كليشه الاشتراك','كليشه الاشتراك','تغير كليشه الاشتراك'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
 return false
 end end
-if text == '~ تعيين كلايش الاوامر ~' then 
+if text == '~المتجر~' then 
 if SecondSudo(msg) then 
 local Sudo_Welcome = '⌁︙اهلا بك مجددا عزيزي المطور \n⌁︙اليك الازرار الخاصه بتعديل وتغيير كلايش سورس سنايبر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'حذف كليشة الايدي','تعيين كليشة الايدي'},
-{'تعيين امر الاوامر'},
-{'تعيين امر م3','تعيين امر م2','تعيين امر م1'},
-{'تعيين امر م6','تعيين امر م5','تعيين امر م4'},
-{'استعادة كلايش الاوامر'},
+{'تعطيل ملف TagAll.lua','تفعيل ملف TagAll.lua'},
+{'تعطيل ملف ChangeUser.lua','تفعيل ملف ChangeUser.lua'},
+{'تعطيل ملف ReplyBot.lua','تفعيل ملف ReplyBot.lua'},
+{'تعطيل ملف MuteNames.lua','تفعيل ملف MuteNames.lua'},
+{'تعطيل ملف TagAdmins.lua','تفعيل ملف TagAdmins.lua'},
+{'تعطيل ملف AddedMe.lua','تفعيل ملف AddedMe.lua'},
+{'تعطيل ملف ProNames.lua','تفعيل ملف ProNames.lua'},
+{'تعطيل ملف ChangePhoto.lua','تفعيل ملف ChangePhoto.lua'},
+{'تعطيل ملف ChangeName.lua','تفعيل ملف ChangeName.lua'},
+{'تعطيل ملف AutoFile.lua','تفعيل ملف AutoFile.lua'},
 {'رجوع ،🔙‘'},
 }
 SendInline(msg.chat_id_,Sudo_Welcome,key)
@@ -3733,7 +3746,7 @@ name = string.gsub(name,'🌑','🌚🌚🌚🌚🌚🌑🌚🌚')
 name = string.gsub(name,'🌚','🌑🌑🌑🌑🌑🌚🌑🌑')
 name = string.gsub(name,'⭐️','🌟🌟🌟🌟🌟🌟⭐️🌟')
 name = string.gsub(name,'📥','💫💫💫📥💫💫💫💫')
-name = string.gsub(name,'⛈','🌨🌨🌨⛈🌨🌨🌨🌨')
+name = string.gsub(name,'⛈','🌨??🌨⛈🌨🌨🌨🌨')
 name = string.gsub(name,'🌥','⛅️⛅️⛅️🌥⛅️⛅️⛅️⛅️')
 name = string.gsub(name,'⛄️','☃️☃️☃️☃️⛄️☃️☃️☃️☃️')
 name = string.gsub(name,'👨‍🔬','👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬')
@@ -4357,9 +4370,8 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source SNAYBIR     --
-if text ==  بوت لعبة XO  or text ==  بوت xo  or text ==  نلعب xo or text ==  xo then local inline = {{{text="اضغط هنا",url="https://t.me/llllE_BOT"}}} SendInline(msg.chat_id_, ⌁︙اضغط للدخول للبوت ,nil,inline) return false end
-if text ==  بوت زغرفة  or text ==  بوت زخرفة or text ==  بوت زغرفه  or text ==  بوت زخرفه or text == زغرفة or text == زخرفه or text ==  نسبة الحب  or text ==  نسبت الحب  or text ==  نسبة الحوب  or text ==  نسبت الحوب or text ==  نسبة الجمال  or text ==  بوت نسبة الجمال  or text ==  اريد بوت نسبة الجمال   or text ==  نسبت الجمال or text == نسبة جمال  or text ==  بوت المنوع  or text ==  بوت منوع  or text ==  تصميم  or text ==  بوت تصميم or text == بوت اغاني or text == بوت استوريات or text == بوت متحركة or text == بوت الابراج or text == حساب العمر then local inline = {{{text="اضغط هنا",url="https://t.me/llllX_BOT"}}} SendInline(msg.chat_id_, ⌁︙اضغط للدخول للبوت,nil,inline) return false end
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1,  ⌁︙@llllZ_BOT , 1,  md ) end
+if text == "زغرفة" or text == "تصميم" or text == "اريد بوت زغرفة" or text == "دزلي بوت زخرفة" or  text == "بوت زخرفه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙[@llllX_BOT]', 1, 'md') end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙[@llllZ_BOT]', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'⌁︙اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(SNAYBIR..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
@@ -9386,7 +9398,7 @@ end,nil)
 end,nil)
 end
 --     Source SNAYBIR     --
-if text == 'جلب نسخه السورس' then
+if text == 'نون' then
 if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط ', 1, 'md')
 else
