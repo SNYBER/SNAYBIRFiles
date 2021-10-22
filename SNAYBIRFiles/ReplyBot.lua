@@ -109,13 +109,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, SNAYBIRTEAM[DevAbs2] , 1,  md )
 return false
 end
 if text ==  خاصك  or text ==  خاصج  or text ==  شوف خاصك or text ==  شوفي خاصج   then 
-local SNAYBIRTEAM = {"شدازله😳😂,"اليوم افضحكم🙂😂"} 
+local SNAYBIRTEAM = {"اليوم افضحكم ، ولك شدازله 🥲😂"} 
 DevAbs2 = math.random(#SNAYBIRTEAM) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAYBIRTEAM[DevAbs2] , 1,  md ) 
 return false
 end
-if text ==  😒  then 
-local SNAYBIRTEAM = {"شبيڪك ڪآإلب ججهرتڪك 😴😑"} 
+if text == '😒'  then 
+local SNAYBIRTEAM = {"شبيڪك ڪآإلب ججهرتڪك😴😑"} 
 DevAbs2 = math.random(#SNAYBIRTEAM) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAYBIRTEAM[DevAbs2] , 1,  md ) 
 return false
